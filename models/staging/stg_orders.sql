@@ -7,11 +7,13 @@ select
         , o.ORDERSELLINGPRICE
         , o.ORDERCOSTPRICE
         , c.CUSTOMERNAME
+        , c.CUSTOMERID
         , c.SEGMENT
         , c.COUNTRY
         , p.CATEGORY
         , p.PRODUCTNAME
         , p.SUBCATEGORY
+        , p.PRODUCTID
 from
         {{ ref('raw_order') }} as o
 left join
