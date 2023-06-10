@@ -9,5 +9,4 @@ from
 group by
         productid
         , productname
-        , category
-        , subcategory
+        , category, subcategory
